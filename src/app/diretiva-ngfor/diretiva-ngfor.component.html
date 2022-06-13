@@ -1,0 +1,13 @@
+<h2> NG For</h2>
+
+<input type="text" #nomeInput>
+<button (click)="add(nomeInput.value)">Adicionar</button>
+
+<table border="1">
+    <tr>
+        <th>Nomes</th>
+    </tr>
+    <tr *ngFor="let nome of nomes">
+        <td>{{nome}}</td>
+    </tr>
+</table>

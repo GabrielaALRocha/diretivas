@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'diretivas';
+  corDoParagrafo: string = 'black'
+
+  mudarCorDoParagrafo(cor: string){
+    this.corDoParagrafo = cor
+  }
 }

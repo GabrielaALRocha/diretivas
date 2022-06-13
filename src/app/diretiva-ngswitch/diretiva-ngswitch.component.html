@@ -1,0 +1,11 @@
+<div [ngSwitch]="cor">
+    <p style="color: rgb(132, 0, 0);"  *ngSwitchCase="'Vermelho'">Vermelho</p>
+    <p style="color: rgb(0, 70, 0)" *ngSwitchCase="'Verde'">Verde</p>
+    <p style="color: rgb(0, 0, 146);" *ngSwitchCase="'Azul'">Azul</p>
+    <p *ngSwitchDefault>Preto</p>
+</div>
+
+<button (click)="mudarCor('Vermelho')">Vermelho</button>
+<button (click)="mudarCor('Verde')">Verde</button>
+<button (click)="mudarCor('Azul')">Azul</button>
+<button (click)="mudarCor('Reset')">Resetar</button>
